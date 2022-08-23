@@ -17,7 +17,7 @@ export default function UserResults() {
 //     setUsers(data);
 //     setLoading(false);
 //   };
-  const {users,loading,fetchUsers} =useContext(GithubContext)
+  const {users,loading} =useContext(GithubContext)
 
 //   useEffect(() => {
 //     fetchUsers();

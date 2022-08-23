@@ -24,7 +24,9 @@ export default function UserSearch() {
     if (text.trim().length > 0) {
       setAlert("Please wait", "info");
       dispatch({ type: "SET_LOADING"});
+      console.log('loading..')
       const users = await searchUsers(text);
+      console.log('users =',users)
       dispatch({ type: "GET_USERS", payload: users });
     } else {
       setAlert("Please enter something", "error");
