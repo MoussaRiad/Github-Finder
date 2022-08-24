@@ -25,6 +25,7 @@ export const getUserAndRepos = async (login) => {
       github.get(`/users/${login}`),
       github.get(`/users/${login}/repos`),
   ])
+  console.log('user =',user.data)
   return {user:user.data,repos:repos.data}
   
 };

@@ -104,10 +104,10 @@ export default function User() {
                 )}
                 {twitter_username && (
                   <div className="stat">
-                    <div className="stat-title text-lg"> Tweeter</div>
+                    <div className="stat-title text-lg"> Twitter</div>
                     <div className="stat-value text-xl">
                       <a
-                        href={"https://tweeter.com/" + { twitter_username }}
+                        href={`https://twitter.com/${twitter_username}`}
                         target="_blank"
                         rel="noreferrer"
                       >
